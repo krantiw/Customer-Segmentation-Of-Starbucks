@@ -7,11 +7,11 @@ Using Supervised and Unsupervised learning
 
 
 --------
-1. [Installation](#installation)
-2. [Project Motivation](#motivation)
-3. [File Descriptions](#files)
-4. [Results](#results)
-5. [Licensing, Authors, and Acknowledgements](#licensing)
+1. Installation]
+2. Project Motivation
+3. Run the project
+4. Results
+5. Acknowledgements
 
 ## 1. Installation <a name="installation"></a>
 
@@ -25,18 +25,30 @@ Using Supervised and Unsupervised learning
     - seaborn.
 
 ## 2. Project Motivation <a name="motivation"></a>
-In this project, I will try to find how Starbucks customers use the app, and how well is the current offers system. I will also see who should the app target in promotions. The data sets used in this project contains simulated data that mimics customer behavior on the Starbucks rewards mobile app. From it, we can understand the costumers' behavior and it might help us make better decisions.  
-The problem we have here is that we don't want to give any customer our offers. We want to give only those who we think will be able to complete the offer. Giving an offer to someone we know he/she probably will not be able to complete it is a waste of time and resources that can be given to someone who we know will complete it. I will approach this problem by first cleaning up the data, then doing some exploratory analysis and see who are my most valuable customers after that I will create a model to help us predicting feature customers and which type of offer should we give them.  
-My goal for this project is predicting which kind of offers, Buy One Get One Free (BOGO), Discount or informational is better to give a current customer by only knowing his/her age, gender, income and the amount they are paying.  
+Starbucks is a growing brand and I myself not being a coffee lover, i have been inquisitive about what attracts so many customers to the doors of Startbucks everyday with so many updates on instagram aswell. Through this Udacity Nanodegree program, this project motivated me to get a deeper understanding about its customers and promotional campaigns. This project has been a great oppurtunity to study the brand using its real-life data and improve my Data Science skills.
 
-## 3. File Descriptions <a name="files"></a>  
-There is one notebook file that have all the work related to the above questions. The data is not available but I showed the data frames and it have some of the data in it. Markdown cells were used to assist in walking through the thought process for individual steps.
-
+## 3. Run the project <a name="files"></a>  
+From the repository,Download the jupyter notebook file - [Customer_Segmentation-Starbucks_Capstone.ipynb](https://github.com/krantiw/Customer-Segmentation-Of-Starbucks/blob/main/Customer_Segmentation_Starbucks_Capstone.ipynb) and the 3 data files.
+- Open the ananconda commond windown n open the jupyter browser on your local:http://localhost:8889/tree
+- Click on the downloaded jupyter file n run it to see the resuls
 
 ## 4. Results <a name="results"></a>  
-From that analysis I did in this project. I found out that most favorite type of offers are **Buy One Get One** (BOGO) offers and **Discount** offers. I digged deep to see who and what type of customers we have and noticed that **Females** tend to complete offers more than males with **56%** completion of the offers they received. Where **Males** completed only **43.18** from the offers they received. But our current data shows that we gave **males** more offers since they have more transactions than females with total number of **72794** transactions, where **females** only had **49382** transactions. In conclusion, the company should give more offers to **Females** than **Males** since they have more completed offers. And they should focus more on **BOGO** and **Discount** offers since they are the one that tend to make customers buy more.  
-  
-The main findings of the code can be found [here](https://alioh.github.io/DSND-Capstone-Project/).
+Segmentation of startbucks Customers:
+The customers can be segmented depending on various parameters according to the campaign chosen
+On analysis the data using supervised and unsupervised learning(Kmeans), we can conclude that:
+Different segments of customers react to offers differently.
+Customers are attracted to BOGO and Discount offers more as compared to Informational Offers
+The buying behaviour of a customer is indepemdent of its annual income
+Starbucks have more male customers than females and other gender.
+The count of male customers in low-income level is slightly higher than that of female and other customers
+Though the aveage salary of femal is greater than that of the male, female spend less on starbucks than male
+Starbucks has more of the young crowd than those of the aged once.
+The result of the offer_type was prediced by training a supervised classifier.
+KNeighborsClassifier turned out to be the best algorithm for this task and predicts customer response with an accuracy rate of almost 90 %. Given the fact that also the same customer will react differently the same offer. 
 
-## 5. Licensing, Authors, Acknowledgements<a name="licensing"></a>
-The data was given by Starbucks and Udacity. Feel free to ask me anything about the code [@alioh](https://alioh.com)
+You can check [the code](https://github.com/krantiw/Customer-Segmentation-Of-Starbucks) on my Gitbub. 
+
+## 5. Acknowledgements<a name="licensing"></a>
+I thank Udacity for such an opportunity and Starbucks for sharing simulated data that mimics customer behavior data.
+
+You can check [my blog](https://krantiwadmare10.medium.com/customer-segmentation-for-starbucks-4ad7ceb942d) on medium.
