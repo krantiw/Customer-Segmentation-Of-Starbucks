@@ -10,7 +10,7 @@ Using Supervised and Unsupervised learning
 1. Installation]
 2. Project Motivation
 3. Run the project
-4. Results
+4. Conclusion and Results
 5. Acknowledgements
 
 ## 1. Installation <a name="installation"></a>
@@ -32,19 +32,21 @@ From the repository,Download the jupyter notebook file - [Customer_Segmentation-
 - Open the ananconda commond windown n open the jupyter browser on your local:http://localhost:8889/tree
 - Click on the downloaded jupyter file n run it to see the resuls
 
-## 4. Results <a name="results"></a>  
+## 4. Conclusion and Results <a name="results"></a>  
+Conclusion:
 Segmentation of startbucks Customers:
 The customers can be segmented depending on various parameters according to the campaign chosen
 On analysis the data using supervised and unsupervised learning(Kmeans), we can conclude that:
 Different segments of customers react to offers differently.
-Customers are attracted to BOGO and Discount offers more as compared to Informational Offers
-The buying behaviour of a customer is indepemdent of its annual income
-Starbucks have more male customers than females and other gender.
 The count of male customers in low-income level is slightly higher than that of female and other customers
 Though the aveage salary of femal is greater than that of the male, female spend less on starbucks than male
 Starbucks has more of the young crowd than those of the aged once.
 The result of the offer_type was prediced by training a supervised classifier.
-KNeighborsClassifier turned out to be the best algorithm for this task and predicts customer response with an accuracy rate of almost 90 %. Given the fact that also the same customer will react differently the same offer. 
+Results:-
+Customers are attracted to BOGO and Discount offers more as compared to Informational Offers
+The buying behaviour of a customer is indepemdent of its annual income
+Starbucks have more male customers than females and other gender.
+KNeighborsClassifier turned out to be the best algorithm for this task and predicts customer response with an accuracy rate of almost 93% after hyperarameter tuning. Given the fact that also the same customer will react differently the same offer. 
 
 You can check [the code](https://github.com/krantiw/Customer-Segmentation-Of-Starbucks) on my Gitbub. 
 
